@@ -9,8 +9,8 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-neutral-900 h-full w-full p-10 px-80 text-white">
-      <div className="flex items-center justify-between">
+    <div className="bg-neutral-900 h-full w-full px-80 text-white p-10">
+      <div className="flex items-center justify-between ">
         <h1 className="font-bold text-xl text-slate-200">PORTFOLIO</h1>
         <div className="flex space-x-4 items-center">
           <Link href="http://github.com/VishwanthBarma">
@@ -33,6 +33,10 @@ export default function Home() {
       <Hero />
       <Projects />
       <Skills />
+
+      <h1 className="text-center bg-black p-2 rounded-xl text-slate-400">
+        Portfolio Under Development
+      </h1>
     </div>
   );
 }

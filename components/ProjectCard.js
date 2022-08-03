@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function ProjectCard({ desc, title, photo, link }) {
+function ProjectCard({ desc, title, photo, link, tag }) {
   return (
-    <div className="flex w-full bg-neutral-800 bg-opacity-50 rounded-3xl p-2 m-5 hover:scale-105 transition ease-in-out">
-      <div className="h-80 w-80 relative">
+    <div className="flex w-full bg-neutral-800 bg-opacity-50 rounded-3xl p-2 m-4 hover:scale-105 transition ease-in-out">
+      <div className="h-60 w-60 relative">
         <Image
           src={photo}
           className="rounded-3xl"
@@ -14,8 +14,11 @@ function ProjectCard({ desc, title, photo, link }) {
           objectFit="cover"
         />
       </div>
-      <div className="relative w-full m-10">
-        <h1 className="text-3xl font-bold my-3 text-orange-400">{title}</h1>
+      <div className="relative w-full mx-10">
+        <div className="flex space-x-5 items-center">
+          <h1 className="text-3xl font-bold my-3 text-orange-400">{title}</h1>
+          <h1 className="text-2xl font-bold text-gray-500">{tag}</h1>
+        </div>
         <h1 className="text-lg text-gray-400 pr-20">{desc}</h1>
         <Link href={link} passHref>
           <a target="_blank">
