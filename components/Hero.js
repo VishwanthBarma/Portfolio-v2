@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import heroImage from "../asserts/VB97Dec03.jpg";
 
 function Hero() {
   return (
@@ -22,11 +24,12 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div>
-          <img
+        <div className="border-2 rounded-full border-sky-500 shadow-xl shadow-neutral-700">
+          {/* <img
             className="rounded-full w-96 shrink-0 shadow-xl border-2 border-sky-500 shadow-neutral-700"
             src="https://avatars.githubusercontent.com/u/72876374?v=4"
-          ></img>
+          ></img> */}
+          <Image src={heroImage} className="rounded-full" />
         </div>
       </div>
     </div>
