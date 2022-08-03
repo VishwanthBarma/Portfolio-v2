@@ -29,7 +29,7 @@ function Hero() {
             className="rounded-full w-96 shrink-0 shadow-xl border-2 border-sky-500 shadow-neutral-700"
             src="https://avatars.githubusercontent.com/u/72876374?v=4"
           ></img> */}
-          <Image src={heroImage} className="rounded-full" />
+          <Image src={heroImage} className="rounded-full" alt="Profile" />
         </div>
       </div>
     </div>
