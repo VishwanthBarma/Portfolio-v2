@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import heroImage from "../asserts/Vb97Dec03.jpg";
 import image1 from "../asserts/1.png";
 import image2 from "../asserts/2.png";
 import image3 from "../asserts/3.png";
