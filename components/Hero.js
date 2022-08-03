@@ -8,7 +8,7 @@ function Hero() {
       <div className="flex space-x-2 items-center px-10">
         <div>
           <h1 className="font-semibold text-slate-300 text-2xl mb-2">
-            Hello, it's me
+            Hello, it&apos;s me
           </h1>
           <h1 className="font-bold text-7xl text-sky-500">Vishwanth Barma.</h1>
           <div className="my-3 pr-52">
@@ -26,10 +26,6 @@ function Hero() {
           </div>
         </div>
         <div className="border-2 rounded-full border-sky-500 shadow-xl shadow-neutral-700">
-          {/* <img
-            className="rounded-full w-96 shrink-0 shadow-xl border-2 border-sky-500 shadow-neutral-700"
-            src="https://avatars.githubusercontent.com/u/72876374?v=4"
-          ></img> */}
           <Image src={heroImage} className="rounded-full" alt="Profile" />
         </div>
       </div>
