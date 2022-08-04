@@ -26,7 +26,12 @@ export default function Home() {
             />
           </Link>
           <button className="bg-neutral-800 p-2 rounded-xl hover:bg-black font-semibold">
-            Resume
+            <a
+              href="https://drive.google.com/uc?export=download&id=1lxiVfA6auHuvy0919Vb5eOa50nPFfpVy"
+              download
+            >
+              Resume
+            </a>
           </button>
         </div>
       </div>
