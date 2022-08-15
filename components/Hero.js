@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import heroImage from "../asserts/VB97Dec03.jpg";
 import { AiFillGithub } from "react-icons/ai";
 import { SiLeetcode } from "react-icons/si";
+import ReactModal from "react-modal";
+import ContactMeModal from "./ContactMeModal";
 
 function Hero() {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <div className="">
@@ -66,7 +69,10 @@ function Hero() {
                 </p>
               </div>
               <div className="my-4 flex">
-                <button className="font-semibold text-slate-300 bg-neutral-800 px-3 py-2 rounded-xl hover:shadow hover:text-white hover:bg-black active:bg-slate-800 cursor-pointer">
+                <button
+                  onClick={() => setOpenModal(true)}
+                  className="font-semibold text-slate-300 bg-neutral-800 px-3 py-2 rounded-xl hover:shadow hover:text-white hover:bg-black active:bg-slate-800 cursor-pointer"
+                >
                   Contact Me
                 </button>
               </div>
@@ -76,6 +82,27 @@ function Hero() {
             </div>
           </div>
         </div>
+
+        <ReactModal
+          isOpen={openModal}
+          style={{
+            content: {
+              top: "50%",
+              left: "50%",
+              right: "auto",
+              bottom: "auto",
+              padding: 0,
+              border: "none",
+              backgroundColor: "",
+              transform: "translate(-50%, -50%)",
+            },
+            overlay: {
+              backgroundColor: "#334250a7",
+            },
+          }}
+        >
+          <ContactMeModal turnModal={setOpenModal} />
+        </ReactModal>
       </div>
     </>
   );
