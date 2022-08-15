@@ -4,7 +4,7 @@ import React from "react";
 
 function ProjectCard({ desc, title, photo, link, tag }) {
   return (
-    <div className="md:flex w-full bg-neutral-800 bg-opacity-50 rounded-3xl p-2 m-4 hover:scale-105 transition ease-in-out">
+    <div className="md:flex w-full bg-neutral-800 rounded-3xl p-2 m-4 hover:scale-105 transition ease-in-out">
       <div className="md:h-60 md:w-60 relative">
         <Image
           src={photo}
