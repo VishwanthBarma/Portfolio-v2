@@ -15,19 +15,18 @@ function ContactMeModal({ turnModal }) {
     });
   };
   return (
-    <div className="bg-white relative shadow-2xl shadow-black flex space-y-5 rounded-2xl md:p-10 p-5 flex-col items-center">
+    <div className="bg-slate-700 text-white relative shadow-2xl shadow-black flex space-y-5 rounded-2xl md:p-10 p-3 flex-col items-center">
       <button
         onClick={() => turnModal(false)}
         className="absolute left-3 top-3 active:text-black"
       >
-        <MdCancel className="h-8 w-8 text-rose-600 active:text-rose-300 drop-shadow-lg hover:scale-105 hover:drop-shadow-xl" />
+        <MdCancel className="h-8 w-8 text-rose-50 active:text-rose-300 drop-shadow-lg hover:scale-105 hover:drop-shadow-xl" />
       </button>
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-bold text-4xl text-center">Contact Me</h1>
-        <h1 className="text-xl text-slate-500">vishwanthbsavp@gmail.com</h1>
-        <p className="text-center px-2 mt-2 text-slate-400">
-          Under Development, kindly send message manually to above email
-          address.
+        <h1 className="text-xl text-slate-400">vishwanthbsavp@gmail.com</h1>
+        <p className="text-center font-coder px-2 mt-2 text-slate-300 ">
+          Under Development, kindly mail to above address.
         </p>
       </div>
       <form
@@ -37,7 +36,7 @@ function ContactMeModal({ turnModal }) {
         <input
           maxLength="30"
           placeholder="Enter your email"
-          className="bg-neutral-800 md:h-12 h-10 shadow-lg rounded-xl p-3"
+          className="bg-neutral-900 md:h-12 h-10 shadow-lg rounded-xl p-3"
           type="email"
           name="Email"
           required
@@ -45,17 +44,17 @@ function ContactMeModal({ turnModal }) {
         <input
           maxLength="30"
           placeholder="Full name"
-          className="bg-neutral-800 md:h-12 h-10 shadow-lg rounded-xl p-3"
+          className="bg-neutral-900 md:h-12 h-10 shadow-lg rounded-xl p-3"
           required
           name="Name"
         ></input>
         <textarea
           required
-          rows="5"
-          cols="40"
+          rows="10"
+          cols="30"
           placeholder="Message"
           name="Message"
-          className="bg-neutral-800 shadow-lg rounded-xl p-3 max-h-44"
+          className="bg-neutral-900 shadow-lg scrollbar-hide rounded-xl p-3 max-h-44 outline-none min-h-full"
         ></textarea>
         <button
           type="submit"

@@ -29,7 +29,7 @@ function Hero() {
             </Link>
             <button className="bg-neutral-800 p-2 rounded-xl hover:bg-black font-semibold">
               <a
-                href="https://drive.google.com/uc?export=download&id=1lxiVfA6auHuvy0919Vb5eOa50nPFfpVy"
+                href="https://drive.google.com/uc?export=download&id=1ZXGr9I2fo70zdPW5BMEc7mjA3aBZ2wXt"
                 download
               >
                 Resume
@@ -52,11 +52,11 @@ function Hero() {
             </div>
           </div>
           <div className="flex space-x-2 items-center lg:px-10">
-            <div className="flex flex-col items-center my-10">
+            <div className="flex flex-col items-center justify-center my-10">
               <h1 className="font-semibold text-slate-300 text-2xl mb-2">
                 Hello, it&apos;s me
               </h1>
-              <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-sky-500">
+              <h1 className="font-bold text-4xl text-center md:text-5xl lg:text-6xl xl:text-7xl text-sky-500">
                 Vishwanth Barma.
               </h1>
               <div className="my-3 lg:mx-16 xl:mx-28 md:mx-10">
