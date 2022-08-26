@@ -24,9 +24,6 @@ function Skills() {
     "Java",
     "Python",
     "GNU/Linux",
-    "PhotoShop",
-    "AdobeXD",
-    "VideoEditing",
   ];
 
   return (

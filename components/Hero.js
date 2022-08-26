@@ -29,7 +29,7 @@ function Hero() {
             </Link>
             <button className="bg-neutral-800 p-2 rounded-xl hover:bg-black font-semibold">
               <a
-                href="https://drive.google.com/uc?export=download&id=1AE7zIQVF7rHV1jhkb-62yftkMQErXbUS"
+                href="https://drive.google.com/uc?export=download&id=1A7JUcK7-BJv6B_SlntL1wns7JVI-OZtc"
                 download
               >
                 Resume

@@ -5,6 +5,7 @@ import image2 from "../asserts/2.png";
 import image3 from "../asserts/3.png";
 import image4 from "../asserts/4.png";
 import image5 from "../asserts/5.png";
+import image6 from "../asserts/6.png";
 
 function Projects() {
   return (
@@ -13,7 +14,7 @@ function Projects() {
         PROJECTS
       </h1>
       <ProjectCard
-        desc="It's an Visual Studio Code color theme extension built using javascript and microsoft color theme docs,
+        desc="It is an Visual Studio Code color theme extension built using javascript and microsoft color theme docs,
          a good theme specially for mid night web developers,
           It will make your life cool with colourfull dark cool theme."
         title="Dark Cool"
@@ -32,7 +33,7 @@ function Projects() {
       />
       <ProjectCard
         desc="One-to-One Chatting app with complete next authentication of google provider, it has capability to add users
-        to chatting section and to start with those users.Actually it stores all the chat information in the firebase firestore and retrives
+        to chatting section and to start with those users. Actually it stores all the chat information in the firebase firestore and retrives
         chat messages according to the user."
         title="The Chat"
         link="https://github.com/VishwanthBarma/THE-CHAT"
@@ -49,11 +50,18 @@ function Projects() {
       />
       <ProjectCard
         desc="Clone of Swiggy app build using React Native, which is an cross platform developemt feature through only one code base,
-        app contains of restaurant's dishes's and different locations."
+        app contains of restaurants, dishess and different locations."
         title="Swiggy Clone"
         link="https://github.com/VishwanthBarma/swiggy-clone"
         photo={image5}
         tag="React Native"
+      />
+      <ProjectCard
+        desc="Implemented college prediction web app, prediction of engineering college based upon caste and rank with previous year rank cutoffs and real college details using Next.js ."
+        title="College Predictor"
+        link="https://github.com/VishwanthBarma/College-Predictor"
+        photo={image6}
+        tag="Next.js"
       />
     </div>
   );
